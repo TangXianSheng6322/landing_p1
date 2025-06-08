@@ -1,1 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --color-blueMain: #00809d;
+  --color-beigeMain: #fcecdd;
+  --color-orangeMain: #ff7601;
+  --color-orangeLight: #f3a26d;
+  --font-main: "Roboto", "sans-serif";
+}
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    @apply font-main tracking-tight text-slate-900 dark:text-base dark:text-white;
+  }
+  p {
+    @apply mt-2 text-sm text-slate-500 dark:text-blue-100;
+  }
+  button {
+    @apply font-main font-medium rounded-2xl border-2 px-5 py-1 cursor-pointer;
+  }
+}
