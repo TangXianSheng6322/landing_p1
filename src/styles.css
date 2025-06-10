@@ -21,9 +21,17 @@
     @apply font-main tracking-tight text-slate-900 dark:text-base dark:text-white;
   }
   p {
-    @apply mt-2 text-sm text-slate-500 dark:text-blue-100;
+    @apply mt-2 text-sm  dark:text-blue-100;
   }
   button {
     @apply font-main font-medium rounded-2xl border-2 px-5 py-1 cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  span {
+    @apply font-main;
   }
 }
