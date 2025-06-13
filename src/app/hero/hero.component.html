@@ -1,4 +1,4 @@
-<section class="h-lvh bg-beigeMain">
+<section class="h-lvh bg-neutral-100">
   <app-navbar class="sticky top-0 z-40"></app-navbar>
   <div class="hero h-svh flex justify-evenly items-center">
     <div class="hero__left w-5/12 h-10/12 flex flex-col flex-center">
@@ -13,7 +13,7 @@
           powerful integrations, crash flow management tools.
         </p>
         <div
-          class="input bg-gray-100 mt-7 w-10/12 h-15 flex justify-between rounded-2xl"
+          class="input bg-white mt-7 w-10/12 h-15 flex justify-between rounded-2xl"
         >
           <input
             type="text"
@@ -50,14 +50,13 @@
       </div>
     </div>
 
-    <div class="hero__right bg-blue-300 w-5/12 h-10/12">
-      hi
-      <div class="hero__right_main h-10/12 w-full">
+    <div class="hero__right relative bg-blue-300 w-5/12 h-10/12">
+      <div class="hero__right_main absolute top-25 left-15 h-10/12 w-full">
         <div
-          class="big__card bg-amber-700 w-2/3 h-10/12 rounded-3xl flex flex-center"
+          class="big__card relative bg-white w-2/3 h-10/12 rounded-3xl flex flex-center"
         >
           <div
-            class="big__card__inner bg-cyan-600 h-11/12 w-10/12 flex flex-col justify-around items-center"
+            class="big__card__inner h-11/12 w-10/12 flex flex-col justify-around items-center"
           >
             <div class="top w-full flex justify-start gap-5">
               <div class="logo w-18 h-18 bg-blueMain rounded-3xl"></div>
@@ -74,7 +73,7 @@
               <p class="text-lg font-normal">April 28, 2025</p>
             </div>
             <div
-              class="middle h-2/12 w-full border-2 rounded-3xl flex justify-between"
+              class="middle h-2/12 w-full border-2 border-orangeLight rounded-3xl flex justify-between"
             >
               <div
                 class="h-full w-8/12 flex justify-start items-center gap-3 ml-4"
@@ -96,17 +95,25 @@
 
                 <p class="text-lg font-medium">Credit Card</p>
               </div>
-              <input type="checkbox" checked />
+              <div class="flex flex-center mr-5">
+                <div
+                  class="checkbox w-5 h-5 bg-orangeLight rounded-full ring-2 ring-orangeLight ring-offset-3 ring-offset-white"
+                ></div>
+              </div>
             </div>
-            <div class="bottom h-2/12 w-full border-2 rounded-3xl">
-              <div>
+            <div
+              class="bottom h-2/12 w-full border-2 rounded-3xl flex justify-between"
+            >
+              <div
+                class="h-full w-8/12 flex justify-start items-center gap-3 ml-4"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
+                  class="size-8"
                 >
                   <path
                     stroke-linecap="round"
@@ -117,12 +124,30 @@
 
                 <p class="text-lg font-medium">Bank Account</p>
               </div>
-              <input type="checkbox" />
+              <div class="flex flex-center mr-5">
+                <div
+                  class="checkbox w-5 h-5 bg-white rounded-full ring-2 ring-orangeLight ring-offset-3 ring-offset-white"
+                ></div>
+              </div>
             </div>
-            <div class="bottom__2"><button>Pay</button></div>
+            <div class="bottom__2 w-full h-1/12">
+              <button class="w-full h-full border-0 bg-blueMain cursor-default">
+                Pay
+              </button>
+            </div>
           </div>
         </div>
-        <div class="small__card"></div>
+      </div>
+      <div
+        class="small__card w-70 h-95 absolute top-10 right-15 flex flex-col justify-between bg-orangeLight rounded-3xl"
+      >
+        <div class="text flex flex-col flex-center h-4/12">
+          <div>
+            <p class="text-lg">Credit Card</p>
+            <h6 class="text-3xl font-medium">239 **** ****</h6>
+          </div>
+        </div>
+        <div class="bottom h-3/12 bg-amber-600 rounded-b-3xl">hi</div>
       </div>
     </div>
   </div>
