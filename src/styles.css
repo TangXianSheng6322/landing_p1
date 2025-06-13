@@ -17,6 +17,9 @@
     margin: 0;
     padding: 0;
   }
+  body {
+    @apply bg-neutral-100;
+  }
   h3 {
     @apply font-main tracking-tight text-slate-900 dark:text-base dark:text-white;
   }

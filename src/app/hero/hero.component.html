@@ -50,16 +50,31 @@
       </div>
     </div>
 
-    <div class="hero__right relative bg-blue-300 w-5/12 h-10/12">
+    <div class="hero__right relative w-5/12 h-10/12">
       <div class="hero__right_main absolute top-25 left-15 h-10/12 w-full">
         <div
-          class="big__card relative bg-white w-2/3 h-10/12 rounded-3xl flex flex-center"
+          class="big__card relative bg-white w-2/3 h-10/12 shadow-sm shadow-orangeLight rounded-3xl flex flex-center"
         >
           <div
             class="big__card__inner h-11/12 w-10/12 flex flex-col justify-around items-center"
           >
             <div class="top w-full flex justify-start gap-5">
-              <div class="logo w-18 h-18 bg-blueMain rounded-3xl"></div>
+              <div
+                class="logo w-18 h-18 flex flex-center bg-blueMain rounded-3xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#F3F4F6"
+                  class="size-12"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
               <div class="text">
                 <p class="font-semibold text-slate-900 text-xl">Dipa Inhouse</p>
                 <p class="text-slate-900 text-lg">dipainhouse&#64;gmail.com</p>
@@ -130,8 +145,10 @@
                 ></div>
               </div>
             </div>
-            <div class="bottom__2 w-full h-1/12">
-              <button class="w-full h-full border-0 bg-blueMain cursor-default">
+            <div class="bottom__2 w-full h-12">
+              <button
+                class="w-full h-full border-0 bg-blueMain text-neutral-100 cursor-default"
+              >
                 Pay
               </button>
             </div>
@@ -139,15 +156,33 @@
         </div>
       </div>
       <div
-        class="small__card w-70 h-95 absolute top-10 right-15 flex flex-col justify-between bg-orangeLight rounded-3xl"
+        class="small__card w-70 h-95 absolute top-10 right-15 flex flex-col justify-between bg-beigeMain rounded-3xl shadow-sm shadow-orangeLight"
       >
         <div class="text flex flex-col flex-center h-4/12">
-          <div>
+          <div class="flex flex-col justify-start">
             <p class="text-lg">Credit Card</p>
             <h6 class="text-3xl font-medium">239 **** ****</h6>
           </div>
         </div>
-        <div class="bottom h-3/12 bg-amber-600 rounded-b-3xl">hi</div>
+        <div
+          class="bottom h-3/12 flex justify-between items-center bg-blueMain rounded-b-3xl"
+        >
+          <img src="visa.svg " alt="visa" class="h-25 w-40" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#FFFFFF"
+            class="size-9 mr-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
