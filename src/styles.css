@@ -34,7 +34,8 @@
   h2,
   h3,
   p,
-  span {
+  span,
+  h6 {
     @apply font-main text-slate-900;
   }
 }
