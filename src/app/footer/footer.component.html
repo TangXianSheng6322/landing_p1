@@ -1,37 +1,51 @@
-<footer class="w-/12 h-10/12 bg-amber-600 flex flex-col">
-  <div class="top w-3/12 flex">
-    <div class="left flex justify-start">
-      <div class="logo h-12/12 w-2/12 flex justify-between">
+<footer class="w-full h-full flex flex-col justify-between">
+  <div class="top w-full h-6/12 flex justify-between items-start gap-10">
+    <div class="left flex justify-start items-center">
+      <div class="logo h-12/12 w-full flex justify-between">
         <div class="logo__container w-full flex flex-center gap-4">
           <div class="logo__pic bg-black h-12 w-12 rounded-2xl"></div>
           <h2 class="logo__text mt-3 font-main text-4xl font-bold">ThaiPay</h2>
         </div>
       </div>
     </div>
-    <div class="middle flex gap-10 w-6/12">
+    <div class="middle flex justify-center items-start gap-30 w-7/12 h-full">
       <div class="first flex flex-col gap-3">
-        <h1 class="text-2xl font-medium">Solutions</h1>
-        <h1 class="text-xl">Small businesses</h1>
-        <h1 class="text-xl">Freelancers</h1>
-        <h1 class="text-xl">Customers</h1>
-        <h1 class="text-xl">Taxes</h1>
+        <h1 class="text-2xl font-medium mb-4">Solutions</h1>
+        <h1 class="text-xl text-gray-600">Small businesses</h1>
+        <h1 class="text-xl text-gray-600">Freelancers</h1>
+        <h1 class="text-xl text-gray-600">Customers</h1>
+        <h1 class="text-xl text-gray-600">Taxes</h1>
       </div>
-      <div class="second">
-        <h1 class="text-2xl font-medium">Solutions</h1>
-        <h1 class="text-xl">Small businesses</h1>
-        <h1 class="text-xl">Freelancers</h1>
-        <h1 class="text-xl">Customers</h1>
-        <h1 class="text-xl">Taxes</h1>
+      <div class="second flex flex-col gap-3">
+        <h1 class="text-2xl font-medium mb-4">Company</h1>
+        <h1 class="text-xl text-gray-600">About us</h1>
+        <h1 class="text-xl text-gray-600">Career</h1>
+        <h1 class="text-xl text-gray-600">Contact</h1>
       </div>
-      <div class="third">
-        <h1 class="text-2xl font-medium">Solutions</h1>
-        <h1 class="text-xl">Small businesses</h1>
-        <h1 class="text-xl">Freelancers</h1>
-        <h1 class="text-xl">Customers</h1>
-        <h1 class="text-xl">Taxes</h1>
+      <div class="third flex flex-col gap-3">
+        <h1 class="text-2xl font-medium mb-4">Learn</h1>
+        <h1 class="text-xl text-gray-600">Blog</h1>
+        <h1 class="text-xl text-gray-600">Ebooks</h1>
+        <h1 class="text-xl text-gray-600">Guides</h1>
+        <h1 class="text-xl text-gray-600">Templates</h1>
       </div>
     </div>
-    <div class="right w-3/12"></div>
+    <div class="right w-3/12 flex flex-col justify-start items-end">
+      <h1 class="text-lg font-medium pr-2 mb-2">Follow us on</h1>
+      <div class="images w-6/12 h-2/12 flex justify-end items-center">
+        <img
+          *ngFor="let link of socialLinks"
+          [src]="link.img"
+          [alt]="link.alt"
+          (click)="redirectTo(link.url)"
+          class="w-3/12 cursor-pointer"
+        />
+      </div>
+    </div>
   </div>
-  <div class="bottom"></div>
+  <div class="bottom w-full border-t-2 border-gray-500">
+    <h1 class="p-7 text-lg text-center text-blueMainMid">
+      ©ThaiPay {{ yearNow }}. All Rights Reserved.
+    </h1>
+  </div>
 </footer>
